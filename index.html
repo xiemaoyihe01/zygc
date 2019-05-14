@@ -87,8 +87,9 @@
         onready : function() {
             var m = this, button = document.getElementById("download");
             button.style.visibility = "visible";
-            m.schemeWakeup();
+            
             button.onclick = function() {
+		m.schemeWakeup();
                 m.wakeupOrInstall();
                 return false;
             }
